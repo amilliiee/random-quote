@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --lg-text: 1.5rem;
+    --md-text: 1rem;
+    --sm-text: 0.625rem;
+
+    --md-weight: 500;
+
+    --tag-color: #AEB0FF;
+    --text-color: #E3E8EF;
+    --bg-color: #111729;
+    --card-color: #20293A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: Outfit, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 15rem;
+}
+
+.quote-card {
+    min-height: 209px;
+    width: 500px;
+    background-color: var(--card-color);
+    border-radius: 12px;
+    background-image: url('./resources/bg-image-random-quote.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.quote-info {
+    display: inherit;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.name {
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.tags {
+    display: inherit;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tag {
+    font-size: var(--sm-text);
+    font-weight: var(--md-text);
+    color: var(--tag-color);
+    border: 1px solid var(--tag-color);
+    border-radius: 50px;
+    padding: 0.25rem 0.75rem;
+}
+
+.quote {
+    color: var(--text-color);
+    font-size: var(--lg-text);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.buttons {
+    display: inline-flex;
+    gap: 0.75rem;
+}
+
+button {
+    padding: 0.5rem 0.75rem;
+    border-radius: 12px;
+    background-color: var(--card-color);
+    border: none;
+    font-size: 0.875rem;
+    font-weight: var(--md-text);
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
