@@ -104,3 +104,9 @@ button {
     gap: 0.5rem;
     cursor: pointer;
 }
+
+@media screen and (max-width: 520px) {
+    .quote-card {
+        width: 388px;
+    }
+}
